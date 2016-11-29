@@ -158,38 +158,16 @@
 > 
 > 查看是否启动Redis服务，并监听指定端口
 > 
-> \[root@localhost redis\]\# netstat -tplan \| grep redis
-> 
-> tcp 0 0 0.0.0.0:**6379** 0.0.0.0:\* LISTEN 6309\/redis-server \*
-> 
-> tcp6 0 0 :::6379 :::\* LISTEN 6309 \/redis-server \*
-> 
-> \[root@localhost redis\]\# ps aux \| grep redis
-> 
-> root 6309 0.1 0.7 136916 7572 ? Ssl 12:03 0:00 \/app\/redis\/bin\/redis-server \*:6379
-> 
-> root 6335 0.0 0.0 112644 980 pts\\/0 S+ 12:08 0:00 grep --color=auto redis
+> ![](/assets/redis03.png)
 > 
 > 这里可以看到，默认的6379已经处于监听状态
 
 4.测试Redis
 
-> 使用Redis客户端测试
-> 
-> \[root@localhost redis\]\# \/app\/redis\/bin\/redis-cli
-> 
-> 127.0.0.1:6379&gt; set mpush mpush0.0.5
-> 
-> OK
-> 
-> 127.0.0.1:6379&gt; get mpush
-> 
-> "mpush0.0.5"
-> 
-> 127.0.0.1:6379&gt;
-> 
-> 查看Redis日志
-> 
+![](/assets/redis04.png)
+
+5.查看Redis日志
+
 > \[root@localhost redis\]\# tailf \/app\/redis\/log\/redis.log
 
 二、Windows安装Redis
@@ -200,7 +178,7 @@
 
 ![](/assets/redis01.png)
 
-2.使用cmd进入到Redis解压目录中，并使用脚本\(redis-server.exe redis.windows.conf\)执行即可，默认配置文件不需要修改
+2.使用cmd进入到Redis解压目录中，并使用脚本\(redis-server.exe  redis.windows.conf\)执行即可，默认配置文件不需要修改
 
 ![](/assets/redis02.png)
 
