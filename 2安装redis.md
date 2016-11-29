@@ -60,7 +60,7 @@
 > 
 > 复制需要的二进制文件
 > 
-> \[root@localhost src\]\# mv redis-benchmark redis-check-aof redis-check-rdb redis-cli redis-sentinel redis-server \/app\/redis\/bin\/
+> \[root@localhost src\]\# cp redis-benchmark redis-check-aof redis-check-rdb redis-cli redis-sentinel redis-server \/app\/redis\/bin\/
 > 
 > \[root@localhost src\]\# cd \/app\/redis
 > 
@@ -203,14 +203,4 @@
 2.使用cmd进入到Redis解压目录中，并使用脚本\(redis-server.exe redis.windows.conf\)执行即可，默认配置文件不需要修改
 
 ![](/assets/redis02.png)
-
-
-
-
-
-
-
-
-
-
 
