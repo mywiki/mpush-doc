@@ -1,4 +1,4 @@
-部署环境，这里将各个服务，分开部署，模拟分布式部署环境，各个服务器上可以根据情况进行集群方式部署。
+
 
 | 主机 | IP | 端口 |
 | --- | --- | --- |
@@ -28,4 +28,46 @@ note：
 > \[root@localhost ~\]\# iptables -F
 > 
 > \[root@localhost ~\]\# iptables -X
+
+
+
+安装JDK
+
+> \[root@localhost app\]\# ll
+> 
+> -rw-------. 1 root root 181352138 Sep 6 22:54 jdk-8u101-linux-x64.tar.gz
+
+1、安装JDK并设置环境变量
+
+> \[root@localhost app\]\# tar xf jdk-8u101-linux-x64.tar.gz
+> 
+> \[root@localhost app\]\# ln -s jdk1.8.0\_101 jdk
+> 
+> 设置JAVA环境变量
+> 
+> \[root@localhost app\]\# vim \/etc\/profile.d\/java.sh
+> 
+> JAVA\_HOME=\/app\/jdk
+> 
+> PATH=$JAVA\_HOME\\/bin:$PATH
+> 
+> CLASSPATH=.:$JAVA\_HOME\/lib\/dt.jar:$JAVA\_HOME\/lib\/tools.jar
+> 
+> export JAVA\_HOME PATH CLASSPATH
+> 
+> 给脚本执行权限
+> 
+> \[root@localhost app\]\# chmod +x \/etc\/profile.d\/java.sh
+> 
+> 讲JAVA环境变量应用到当前shell
+> 
+> \[root@localhost app\]\# source \/etc\/profile.d\/java.sh
+> 
+> \[root@localhost app\]\# java -version
+> 
+> java version "1.8.0\_101"
+> 
+> Java\(TM\) SE Runtime Environment \(build 1.8.0\_101-b13\)
+> 
+> Java HotSpot\(TM\) 64-Bit Server VM \(build 25.101-b13, mixed mode\)
 
