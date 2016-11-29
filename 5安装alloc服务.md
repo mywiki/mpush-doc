@@ -20,6 +20,14 @@
 
 ![](/assets/alloc02.png)
 
+浏览器测试
+
+![](/assets/alloc05.png)
+
+可以看到，已经有mpush服务的信息
+
+
+
 二、Windows安装Mpush-Alloc
 
 1.解压alloc-release-0.0.5.tar.gz
