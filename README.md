@@ -1,2 +1,2 @@
-# Mpush安装环境
+# Mpush安装
 
