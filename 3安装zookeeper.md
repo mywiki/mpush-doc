@@ -1,12 +1,10 @@
 注意，安装Zookeeper依赖JDK，具体步骤参见
 
-从[官网](http://www.apache.org/dyn/closer.cgi/zookeeper/)直接下载Zookeeper最新版本
+从[官网](http://www.apache.org/dyn/closer.cgi/zookeeper/)直接下载Zookeeper最新版本\(Zookeeper支持Windows和Linux\)
 
 > \[root@localhost app\]\# ll
 > 
 > -rw-------. 1 root root 22724574 Sep 6 23:02 zookeeper-3.4.9.tar.gz
-
-
 
 一、Linux安装Zookeeper
 
@@ -72,15 +70,19 @@
 > 
 > \[zookeeper\]
 
-
-
 二、Windows安装Zookeeper
 
+使用上面下载的Zookeeper文件
 
+1.下载并解压，解压后如下
 
+![](/assets/zookeeper01.png)
 
+2.提供配置文件
 
+将conf目录下的zoo\_sample.conf重命名为zoo.conf
 
+3.到bin目录下，双击zkServer.bat即可
 
-
+![](/assets/zookeeper02.png)
 
