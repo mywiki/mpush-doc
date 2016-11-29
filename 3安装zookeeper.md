@@ -20,7 +20,7 @@
 > 
 > \[root@localhost zookeeper\]\# cp conf\/zoo\_sample.cfg conf\/zoo.cfg
 > 
-> \[root@localhost zookeeper\]\# vim conf\\/zoo.cfg
+> \[root@localhost zookeeper\]\# vim conf\/zoo.cfg
 > 
 > tickTime=2000
 > 
