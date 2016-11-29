@@ -1,5 +1,3 @@
-注意，安装Zookeeper依赖JDK，具体步骤参见
-
 从[官网](http://www.apache.org/dyn/closer.cgi/zookeeper/)直接下载Zookeeper最新版本\(Zookeeper支持Windows和Linux\)
 
 > \[root@localhost app\]\# ll
