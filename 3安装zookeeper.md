@@ -1,0 +1,86 @@
+注意，安装Zookeeper依赖JDK，具体步骤参见
+
+从[官网](http://www.apache.org/dyn/closer.cgi/zookeeper/)直接下载Zookeeper最新版本
+
+> \[root@localhost app\]\# ll
+> 
+> -rw-------. 1 root root 22724574 Sep 6 23:02 zookeeper-3.4.9.tar.gz
+
+
+
+一、Linux安装Zookeeper
+
+> \[root@localhost app\]\# tar xf zookeeper-3.4.9.tar.gz
+> 
+> \[root@localhost app\]\# ln -s zookeeper-3.4.9 zookeeper
+> 
+> \[root@localhost app\]\# cd zookeeper
+> 
+> \[root@localhost zookeeper\]\# mkdir data
+> 
+> 提供配置文件
+> 
+> \[root@localhost zookeeper\]\# cp conf\/zoo\_sample.cfg conf\/zoo.cfg
+> 
+> \[root@localhost zookeeper\]\# vim conf\\/zoo.cfg
+> 
+> tickTime=2000
+> 
+> initLimit=10
+> 
+> syncLimit=5
+> 
+> **dataDir=\/app\/zookeeper\/data**
+> 
+> clientPort=2181
+
+启动Zookeeper服务
+
+> \[root@localhost zookeeper\]\# bin\/zkServer.sh start
+> 
+> ZooKeeper JMX enabled by default
+> 
+> Using config: \/app\/zookeeper\/bin\/..\/conf\/zoo.cfg
+> 
+> Starting zookeeper ... STARTED
+
+查看端口监听
+
+> \[root@localhost zookeeper\]\# netstat -tplan \| grep 2181
+> 
+> tcp6 0 0 :::2181 :::\* LISTEN 3180\/java
+
+使用Zookeeper的客户端测试
+
+> \[root@localhost zookeeper\]\# bin\/zkCli.sh
+> 
+> Connecting to localhost:2181
+> 
+> ......................................................
+> 
+> ......................................................
+> 
+> WATCHER::
+> 
+> WatchedEvent state:SyncConnected type:None path:null
+> 
+> \[zk: localhost:2181\(CONNECTED\) 0\]
+> 
+> \[zk: localhost:2181\(CONNECTED\) 2\] create mpush
+> 
+> \[zk: localhost:2181\(CONNECTED\) 4\] ls \\/
+> 
+> \[zookeeper\]
+
+
+
+二、Windows安装Zookeeper
+
+
+
+
+
+
+
+
+
