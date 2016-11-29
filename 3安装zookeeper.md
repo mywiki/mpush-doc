@@ -14,23 +14,9 @@
 > 
 > \[root@localhost app\]\# cd zookeeper
 > 
-> \[root@localhost zookeeper\]\# mkdir data
-> 
 > 提供配置文件
 > 
 > \[root@localhost zookeeper\]\# cp conf\/zoo\_sample.cfg conf\/zoo.cfg
-> 
-> \[root@localhost zookeeper\]\# vim conf\/zoo.cfg
-> 
-> tickTime=2000
-> 
-> initLimit=10
-> 
-> syncLimit=5
-> 
-> **dataDir=\/app\/zookeeper\/data**
-> 
-> clientPort=2181
 
 启动Zookeeper服务
 
@@ -48,27 +34,11 @@
 > 
 > tcp6 0 0 :::2181 :::\* LISTEN 3180\/java
 
+![](/assets/zookeeper03.png)
+
 使用Zookeeper的客户端测试
 
-> \[root@localhost zookeeper\]\# bin\/zkCli.sh
-> 
-> Connecting to localhost:2181
-> 
-> ......................................................
-> 
-> ......................................................
-> 
-> WATCHER::
-> 
-> WatchedEvent state:SyncConnected type:None path:null
-> 
-> \[zk: localhost:2181\(CONNECTED\) 0\]
-> 
-> \[zk: localhost:2181\(CONNECTED\) 2\] create mpush
-> 
-> \[zk: localhost:2181\(CONNECTED\) 4\] ls \\/
-> 
-> \[zookeeper\]
+![](/assets/zookeeper04.png)
 
 二、Windows安装Zookeeper
 
