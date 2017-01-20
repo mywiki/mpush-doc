@@ -1,8 +1,8 @@
 一、Linux安装Mpush-Alloc
 
-> \[root@localhost app\]\# tar xf alloc-release-0.0.5.tar.gz
+> \[root@localhost app\]\# tar xf alloc-release-0.7.0.tar.gz
 > 
-> \[root@localhost app\]\# ln -s mpush-alloc-0.0.5 mpush-alloc
+> \[root@localhost app\]\# ln -s mpush-alloc-0.7.0 mpush-alloc
 > 
 > 编辑配置文件\(注意，这里不需要修改，如果分布式部署，修改zookeeper地址信息即可\)。
 > 
@@ -25,8 +25,6 @@
 ![](/assets/alloc05.png)
 
 可以看到，已经有mpush服务的信息
-
-
 
 二、Windows安装Mpush-Alloc
 
