@@ -28,11 +28,11 @@
 
 二、Windows安装Mpush-Alloc
 
-1.解压alloc-release-0.0.5.tar.gz
+1.解压alloc-release-0.7.0.tar.gz
 
 2.修改配置文件\(注意，这里不需要修改，如果分布式部署，修改zookeeper地址信息即可\)。
 
-3.使用cmd进入到alloc的bin目录，使用如下命令启动\(java -Dmp.conf=D:\mpush\mpush-alloc-0.0.5\conf\mpush.conf -jar bootstrap.jar\)
+3.使用cmd进入到alloc的bin目录，使用如下命令启动\(java -Dmp.conf=D:\mpush\mpush-alloc-0.7.0\conf\mpush.conf -jar bootstrap.jar\)
 
 ![](/assets/alloc03.png)
 
