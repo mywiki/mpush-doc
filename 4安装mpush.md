@@ -1,8 +1,8 @@
 一、Linux安装Mpush
 
-> \[root@localhost app\]\# tar xf mpush-release-0.6.1.tar.gz
+> \[root@localhost app\]\# tar xf mpush-release-0.7.0.tar.gz
 > 
-> \[root@localhost app\]\# ln -s mpush-0.6.1 mpush
+> \[root@localhost app\]\# ln -s mpush-0.7.0 mpush
 > 
 > 编辑Mpush配置文件\(注意，只需要修改mpush.conf配置文件即可，不需要修改reference.conf\)，修改默认提供的Redis、Zookeeper服务器地址和端口信息\(因为我redis和zookeeper直接部署在本机，所以不用修改\)。
 > 
@@ -30,13 +30,13 @@
 
 二、Windows安装Mpush
 
-1.解压mpush-release-0.0.5.tar.gz
+1.解压mpush-release-0.7.0.tar.gz
 
 ![](/assets/mpush04.png)
 
 2.编辑Mpush配置文件\(注意，只需要修改mpush.conf配置文件即可，不需要修改reference.conf\)，修改默认提供的Redis、Zookeeper服务器地址和端口信息\(因为我redis和zookeeper直接部署在本机，所以不用修改\)。
 
-3.使用cmd进入到bin目录，启动Mpush\(使用如下脚本java -Dmp.conf=D:\mpush\mpush-0.0.5\conf\mpush.conf -jar bootstrap.jar\)
+3.使用cmd进入到bin目录，启动Mpush\(使用如下脚本java -Dmp.conf=D:\mpush\mpush-0.7.0\conf\mpush.conf -jar bootstrap.jar\)
 
 ![](/assets/mpush05.png)
 
