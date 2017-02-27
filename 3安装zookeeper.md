@@ -1,36 +1,36 @@
-从[官网](http://www.apache.org/dyn/closer.cgi/zookeeper/)直接下载Zookeeper最新版本\(Zookeeper支持Windows和Linux\)
+从[官网](http://www.apache.org/dyn/closer.cgi/zookeeper/)直接下载Zookeeper最新版本(Zookeeper支持Windows和Linux)
 
-> \[root@localhost app\]\# ll
+> [root@localhost app]# ll
 > 
 > -rw-------. 1 root root 22724574 Sep 6 23:02 zookeeper-3.4.9.tar.gz
 
 一、Linux安装Zookeeper
 
-> \[root@localhost app\]\# tar xf zookeeper-3.4.9.tar.gz
+> [root@localhost app]# tar xf zookeeper-3.4.9.tar.gz
 > 
-> \[root@localhost app\]\# ln -s zookeeper-3.4.9 zookeeper
+> [root@localhost app]# ln -s zookeeper-3.4.9 zookeeper
 > 
-> \[root@localhost app\]\# cd zookeeper
+> [root@localhost app]# cd zookeeper
 > 
 > 提供配置文件
 > 
-> \[root@localhost zookeeper\]\# cp conf\/zoo\_sample.cfg conf\/zoo.cfg
+> [root@localhost zookeeper]# cp conf/zoo_sample.cfg conf/zoo.cfg
 
 启动Zookeeper服务
 
-> \[root@localhost zookeeper\]\# bin\/zkServer.sh start
+> [root@localhost zookeeper]# bin/zkServer.sh start
 > 
 > ZooKeeper JMX enabled by default
 > 
-> Using config: \/app\/zookeeper\/bin\/..\/conf\/zoo.cfg
+> Using config: /app/zookeeper/bin/../conf/zoo.cfg
 > 
 > Starting zookeeper ... STARTED
 
 查看端口监听
 
-> \[root@localhost zookeeper\]\# netstat -tplan \| grep 2181
+> [root@localhost zookeeper]# netstat -tplan | grep 2181
 > 
-> tcp6 0 0 :::2181 :::\* LISTEN 3180\/java
+> tcp6 0 0 :::2181 :::* LISTEN 3180/java
 
 ![](/assets/zookeeper03.png)
 
@@ -48,7 +48,7 @@
 
 2.提供配置文件
 
-将conf目录下的zoo\_sample.conf重命名为zoo.conf
+将conf目录下的zoo_sample.conf重命名为zoo.conf
 
 3.到bin目录下，双击zkServer.bat即可
 
